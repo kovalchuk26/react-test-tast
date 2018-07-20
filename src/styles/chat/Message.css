@@ -1,0 +1,102 @@
+@value default-font-size, default-border-radius, light-green, border-grey from './../Variables.css';
+
+.message {
+    max-width: 230px;
+    font-size: default-font-size;
+    line-height: 25px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 0 7px;
+    word-wrap: break-word;
+}
+
+.messageTop {
+    composes: message;
+    border-radius: 13px 13px default-border-radius default-border-radius;
+    margin-bottom: 2px;
+}
+
+.messageMiddle {
+    composes: message;
+    margin-bottom: 2px;
+}
+
+.messageBottom {
+    composes: message;
+    border-radius: default-border-radius default-border-radius 13px 13px;
+}
+
+/*OWN MESSAGES*/
+
+.ownMessage {
+    max-width: 260px;
+    font-size: default-font-size;
+    line-height: 25px;
+    color: #fff;
+    background-color: light-green;
+    padding: 0 7px;
+    word-wrap: break-word;
+    justify-content: flex-end;
+    border-radius: 13px;
+}
+
+.ownMessageTop {
+    composes: ownMessage;
+    border-radius: 13px 13px default-border-radius default-border-radius;
+    margin-bottom: 2px;
+}
+
+.ownMessageMiddle {
+    composes: ownMessage;
+    margin-bottom: 2px;
+}
+
+.ownMessageBottom {
+    composes: ownMessage;
+    border-radius: default-border-radius default-border-radius 13px 13px;
+}
+
+.ownMessageInfo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.ownMessageReadStatus {
+    composes: ownMessageInfo;
+    margin-right: 0px;
+}
+
+.ownInfoIcon {
+    margin-right: 10px;
+}
+
+.avatar {
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.messageTime {
+    margin-left: 10px;
+    color: border-grey;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.ownMessageTime {
+    composes: messageTime;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.loadingStatus {
+    color: border-grey;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.errorStatus {
+    composes: loadingStatus;
+    color: #FF0000;
+}

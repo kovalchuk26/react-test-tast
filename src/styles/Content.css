@@ -1,0 +1,10 @@
+.content {
+    margin: 0 auto 20px;
+    display: flex;
+    width: 1236px;
+    height: 780px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+

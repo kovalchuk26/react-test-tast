@@ -1,0 +1,51 @@
+@value border-grey from './../Variables.css';
+
+.indicator {
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.status {
+    font-size: 12px;
+    color: #898989;
+}
+
+.header {
+    padding-bottom: 20px;
+    width: 910px;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid border-grey;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 18px;
+    margin-right: 25%;
+}
+
+.userName {
+    font-size: 15px;
+}
+
+.userStatus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profileLink {
+    font-size: 15px;
+    color: #1172E0;
+    margin-right: 25px;
+    text-decoration: none;
+}

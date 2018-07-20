@@ -1,0 +1,38 @@
+.header {
+    width: 1400px;
+    margin: 0 auto 20px;
+    padding: 0px 82px;
+    height: 65px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.links {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.link {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.avatarBLock {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-right: 7px;
+    background-color: rgb(137, 137, 137);
+    border-radius: 100px;
+}
+
+.logo {
+
+}

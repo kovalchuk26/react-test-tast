@@ -1,0 +1,44 @@
+.messageRow {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.messageGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.ownMessageGroup {
+    composes: messageGroup;
+    align-items: flex-end;
+}
+
+.groupMessageRow {
+    composes: messageRow;
+    align-items: flex-end;
+}
+
+.ownMessageRow {
+    composes: messageRow;
+    justify-content: flex-end;
+}
+
+.lastMessage {
+    display: flex;
+    align-items: center;
+}
+
+.ownMessageTime {
+    composes: ownMessageTime from './Message.css';
+}
+
+.avatar {
+    composes: avatar from './Message.css';
+}

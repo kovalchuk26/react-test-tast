@@ -1,0 +1,151 @@
+@value default-font-size, default-border-radius, light-green, border-grey from './Variables.css';
+
+.sidebar {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    min-width: 317px;
+}
+
+.filters {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.filter {
+    border: 1px solid border-grey;
+    flex-grow: 1;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    font-size: default-font-size;
+    line-height: 30px;
+}
+
+.filter:first-child {
+    border-top-left-radius: default-border-radius;
+    border-bottom-left-radius: default-border-radius;
+}
+
+.filter:last-child {
+    border-top-right-radius: default-border-radius;
+    border-bottom-right-radius: default-border-radius;
+}
+
+.filter:hover {
+    color: #fff;
+    background-color: light-green;
+    border-color: light-green;
+}
+
+.filter:not(:last-child) {
+    border-right: none;
+}
+
+.filterActive {
+    composes: filter;
+    color: #fff;
+    background-color: light-green;
+    border-color: light-green;
+}
+
+
+/*-----Content-----*/
+.content {
+    min-width: 300px;
+}
+
+.contentPadding {
+    width: 10px;
+    height: auto;
+}
+
+.postersList {
+    display: flex;
+    height: 728px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.postersList::-webkit-scrollbar {
+    width: 7px;
+}
+
+.postersList::-webkit-scrollbar-track {
+    background-color: #EDEDED;
+    border-radius: default-border-radius;
+}
+
+.postersList::-webkit-scrollbar-thumb {
+    height: 240px;
+    border-radius: default-border-radius;
+    background-color: #898989;
+}
+
+.poster {
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    margin: 1px 0px;
+}
+
+.poster:last-child {
+    margin-bottom: 0px;
+}
+
+.posterDisabled {
+    composes: poster;
+    background-color: #EDEDED;
+}
+
+
+/* -----Info Block-----*/
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 140px;
+    background-color: light-green;
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    margin-bottom: 2px;
+}
+
+.infoTitleBlock {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.infoTitle {
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 14px;
+}
+
+.infoText {
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    width: 217px;
+    word-wrap: break-word;
+    margin-left: 53px;
+}
+
+.infoLink {
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    opacity: 0.8;
+    margin-left: 53px;
+}
